@@ -29,6 +29,7 @@ public class Teste {
 
 	public Nave deserializarPlayer(Nave nave) throws Exception {
 		FileInputStream fis = new FileInputStream("Nave.ser");
+//yeeeeeeee
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		nave = (Nave) ois.readObject();
 		System.out.println(nave.getPosX());
